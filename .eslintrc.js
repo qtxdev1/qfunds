@@ -23,6 +23,15 @@ module.exports = {
       'warn',
       { props: 'never', children: 'never' },
     ],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          '{}': false,
+        },
+        extendDefaults: true,
+      },
+    ],
 
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',

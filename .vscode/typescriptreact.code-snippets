@@ -43,13 +43,13 @@
     "prefix": "rcp",
     "body": [
       "import * as React from 'react';\n",
-      "import clsxm from '@/lib/clsxm';\n",
+      "import { cn } from '@/lib/utils';\n",
       "type ${1:${TM_FILENAME_BASE}}Props= {\n",
       "} & React.ComponentPropsWithoutRef<'div'>\n",
       "export default function ${1:${TM_FILENAME_BASE}}({className, ...rest}: ${1:${TM_FILENAME_BASE}}Props) {",
       "  return (",
-      "    <div className={clsxm(['', className])} {...rest}>",
-      "      $0",
+      "    <div className={cn(['', className])} {...rest}>",
+      "      $2",
       "    </div>",
       "  )",
       "}"
@@ -181,6 +181,14 @@
   "Wrap with clsxm": {
     "prefix": "cxm",
     "body": ["{clsxm([${TM_SELECTED_TEXT}$0, className])}"]
+  },
+  "Wrap with div": {
+    "prefix": "dv",
+    "body": [
+      "<div className='$1'>",
+      "  $2",
+      "</div>",
+    ]
   },
   //#endregion  //*======== Snippet Wrap ===========
 
