@@ -4,15 +4,16 @@ import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
 
+import Layout from '@/components/layouts/Layout';
 import UnderlineLink from '@/components/links/UnderlineLink';
 
 export default function HomePage() {
   return (
-    <main>
+    <Layout>
       <Head>
         <title>Hi</title>
       </Head>
-      <section className='bg-white'>
+      <section>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
           <h1 className='mt-4'>QApp Starter</h1>
           <p className='mt-2 text-sm text-gray-800'>
@@ -28,6 +29,6 @@ export default function HomePage() {
           </footer>
         </div>
       </section>
-    </main>
+    </Layout>
   );
 }

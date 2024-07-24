@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 
+import ThemeToggle from '@/components/ThemeToggle';
+
 type HeaderProps = {} & React.ComponentPropsWithoutRef<'div'>;
 
 export default function Header({ className, ...rest }: HeaderProps) {
@@ -59,6 +61,7 @@ export default function Header({ className, ...rest }: HeaderProps) {
                 </svg>
               </button>
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </div>
