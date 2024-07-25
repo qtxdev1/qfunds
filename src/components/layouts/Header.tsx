@@ -1,7 +1,5 @@
 import * as React from 'react';
-
 import { cn } from '@/lib/utils';
-
 import ThemeToggle from '@/components/ThemeToggle';
 
 type HeaderProps = {} & React.ComponentPropsWithoutRef<'div'>;

@@ -53,22 +53,25 @@ module.exports = {
       'warn',
       {
         groups: [
-          // ext library & side effect imports
-          ['^@?\\w', '^\\u0000'],
-          // {s}css files
-          ['^.+\\.s?css$'],
-          // Lib and hooks
-          ['^@/lib', '^@/hooks'],
-          // static data
-          ['^@/data'],
-          // components
-          ['^@/components', '^@/container'],
-          // zustand store
-          ['^@/store'],
-          // Other imports
-          ['^@/'],
-          // relative paths up until 3 level
           [
+            // ext library & side effect imports
+            '^@?\\w',
+            '^\\u0000',
+            // {s}css files
+            '^.+\\.s?css$',
+            // Lib and hooks
+            '^@/lib',
+            '^@/hooks',
+            // static data
+            '^@/data',
+            // components
+            '^@/components',
+            '^@/container',
+            // zustand store
+            '^@/store',
+            // Other imports
+            '^@/',
+            // relative paths up until 3 level
             '^\\./?$',
             '^\\.(?!/?$)',
             '^\\.\\./?$',
@@ -77,10 +80,11 @@ module.exports = {
             '^\\.\\./\\.\\.(?!/?$)',
             '^\\.\\./\\.\\./\\.\\./?$',
             '^\\.\\./\\.\\./\\.\\.(?!/?$)',
+            // types
+            '^@/types',
+            // other that didnt fit in
+            '^',
           ],
-          ['^@/types'],
-          // other that didnt fit in
-          ['^'],
         ],
       },
     ],

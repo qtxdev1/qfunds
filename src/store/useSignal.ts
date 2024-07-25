@@ -1,8 +1,6 @@
 import { produce } from 'immer';
 import { create } from 'zustand';
-
 import { chartDataSample } from '@/lib/dummyChartData';
-
 import { Signal } from '@/types';
 
 interface SignalState {

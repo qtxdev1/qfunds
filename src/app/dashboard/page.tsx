@@ -1,13 +1,10 @@
 'use client';
 import * as React from 'react';
-
 import { cn } from '@/lib/utils';
-
 import ActivityCard from '@/components/cards/ActivityCard';
 import SignalCard from '@/components/cards/SignalCard';
 import TopSignalCard from '@/components/cards/TopSignalCard';
 import Layout from '@/components/layouts/Layout';
-
 import { useSignalStore } from '@/store/useSignal';
 
 type DashboardProps = {} & React.ComponentPropsWithoutRef<'div'>;

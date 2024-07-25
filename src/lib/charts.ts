@@ -1,8 +1,6 @@
 import { ChartData, ChartOptions } from 'chart.js';
 import resolveConfig from 'tailwindcss/resolveConfig';
-
 import twConfig from '../../tailwind.config';
-
 import { HistoryData } from '@/types';
 
 export const tailwindConfig = () => {

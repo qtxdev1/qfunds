@@ -13,9 +13,7 @@ import {
 } from 'chart.js';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import 'chartjs-adapter-moment';
-
 import { lineChartConfigs } from '@/lib/charts';
-
 import { useThemeProvider } from '@/context/ThemeContext';
 
 ChartJS.register(

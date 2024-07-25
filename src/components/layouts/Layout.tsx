@@ -1,7 +1,5 @@
 import * as React from 'react';
-
 import { cn } from '@/lib/utils';
-
 import Header from '@/components/layouts/Header';
 
 type LayoutProps = {

@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import * as React from 'react';
-
 import { usdFormat } from '@/lib/helper';
-
 import defaultAvatar from '../../../public/images/user-avatar-32.png';
-
 import { Signal } from '@/types';
 
 type SignalCardProps = {

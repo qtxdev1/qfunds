@@ -2,12 +2,9 @@
 
 import Image from 'next/image';
 import React from 'react';
-
 import { cardSettings } from '@/lib/charts';
 import { usdFormat } from '@/lib/helper';
-
 import LineChart from '@/components/charts/LineChart';
-
 import { Signal } from '@/types';
 
 type TopSignalCardProps = {
