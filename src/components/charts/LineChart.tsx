@@ -16,6 +16,8 @@ import 'chartjs-adapter-moment';
 
 import { lineChartConfigs } from '@/lib/charts';
 
+import { useThemeProvider } from '@/context/ThemeContext';
+
 ChartJS.register(
   LineController,
   LineElement,
@@ -35,9 +37,12 @@ type LineChartProps = {
 const LineChart: React.FC<LineChartProps> = ({ chartData, width, height }) => {
   const [chart, setChart] = useState<ChartJS<'line'> | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const darkMode = true;
+  const { currentTheme } = useThemeProvider();
 
-  const options = useMemo(() => lineChartConfigs(darkMode), [darkMode]);
+  const options = useMemo(
+    () => lineChartConfigs(currentTheme === 'dark'),
+    [currentTheme]
+  );
 
   useEffect(() => {
     if (canvasRef.current) {
